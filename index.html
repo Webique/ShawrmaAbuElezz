@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shawarma Abu El-Ezz</title>
+    <title>شاورما أبو العز</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,33 +12,36 @@
         <div class="container">
             <!-- Logo and Title -->
             <div class="logo-section">
-                <img src="assets/logo.png" alt="Shawarma Abu El-Ezz Logo" class="logo">
+                <img src="assets/logo.png" alt="شعار شاورما أبو العز" class="logo">
             </div>
 
-            <!-- Navigation Menu -->
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#hours">Opening Hours</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-            </nav>
+<!-- Navigation Menu -->
+<nav>
+    <ul class="nav-links">
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#menu">قائمة الطعام</a></li>
+        <li><a href="#order">اطلب من هنا</a></li> <!-- New Order section link -->
+        <li><a href="#call">اتصل بنا</a></li> <!-- New Call section link -->
+        <li><a href="#hours">ساعات العمل</a></li>
+        <li><a href="#location">الموقع</a></li>
+        <li><a href="#gallery">معرض الصور</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+    <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+</nav>
+
         </div>
     </header>
 
 <!-- Hero Section -->
 <section class="hero-section">
-    <img src="assets/hero.jpg" alt="Shawarma Abu El-Ezz" class="hero-image">
+    <img src="assets/hero.jpg" alt="شاورما أبو العز" class="hero-image">
     <div class="hero-overlay">
-        <h1 class="hero-title">Shawarma Abu El-Ezz</h1>
+        <img src="assets/logo.png" alt="شعار شاورما أبو العز" class="hero-logo">
     </div>
 </section>
 
@@ -48,16 +51,16 @@
         <div class="container">
             <div class="who-we-are-content">
                 <div class="text-content">
-                    <h2>About Us</h2>
+                    <h2>من نحن</h2>
                     <p>
-                        Welcome to <strong>Shawarma Abu El-Ezz</strong>, where authentic Syrian flavors come alive. Our specialty is traditional Syrian shawarma, complemented by a variety of perfectly grilled dishes.
+                        مرحبًا بكم في <strong>شاورما أبو العز</strong>، حيث تتجسد النكهات السورية الأصيلة. نقدم الشاورما السورية التقليدية وأشهى المشويات المتنوعة.
                     </p>
                     <p>
-                        Located in Jeddah's Al-Fayha neighborhood, we invite you to savor our delicious meals in a warm and welcoming atmosphere.
+                        يقع مطعمنا في حي الفيحاء بجدة، وندعوكم للاستمتاع بوجباتنا اللذيذة في أجواء دافئة ومرحبة.
                     </p>
                 </div>
                 <div class="image-content">
-                    <img src="assets/about.jpg" alt="Shawarma and Grill" class="who-we-are-image">
+                    <img src="assets/about.jpg" alt="شاورما ومشويات" class="who-we-are-image">
                 </div>
             </div>
         </div>
@@ -68,11 +71,37 @@
     <!-- Menu Section -->
     <section class="menu-section" id="menu">
         <div class="container">
-            <h2>Our Menu</h2>
+            <h2>قائمة الطعام</h2>
             <p>
-                Explore our selection of flavorful shawarma and grilled dishes, prepared with the finest ingredients.
+                اكتشفوا مجموعة مختارة من الشاورما والمشويات المحضرة بأجود المكونات.
             </p>
-            <a href="assets/menu.pdf" class="menu-button" target="_blank">View Our Menu</a>
+            <a href="assets/menu.pdf" class="menu-button" target="_blank">عرض القائمة</a>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Order Section -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <h2>اطلب من هنا</h2>
+            <p>قدم طلبك مباشرة عبر واتساب! اضغط على الزر أدناه للتواصل معنا.</p>
+            <a href="https://wa.me/+966551958433" target="_blank" class="order-button" aria-label="اطلب عبر واتساب">
+                اطلب الآن عبر واتساب
+            </a>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Call Section -->
+    <section class="call-section" id="call">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <p>هل تحتاج إلى مساعدة؟ اتصل بنا وسنكون سعداء بخدمتك!</p>
+            <a href="tel:+966551958433" class="call-button" aria-label="اتصل بنا">
+                اتصل الآن
+            </a>
         </div>
     </section>
 
@@ -81,12 +110,16 @@
     <!-- Opening Hours Section -->
     <section class="opening-hours" id="hours">
         <div class="container">
-            <h2>Opening Hours</h2>
-            <p>Visit us during our opening hours and enjoy the authentic taste of Syrian shawarma.</p>
+            <h2>ساعات العمل</h2>
+            <p>زورونا خلال ساعات العمل واستمتعوا بالنكهات السورية الأصيلة.</p>
             <div class="hours-table">
                 <div class="hours-row">
-                    <span class="days">Everyday</span>
-                    <span class="hours">11:00 AM - 6:00 AM</span>
+                    <span class="days">كل يوم</span>
+                </div>
+                <div class="hours-row">
+                    <span class="start-time">11:00 صباحًا</span>
+                    <span class="separator">إلى</span>
+                    <span class="end-time">6:00 صباحًا</span>
                 </div>
             </div>
         </div>
@@ -94,11 +127,12 @@
 
     <div class="section-divider"></div>
 
+    <!-- Location Section -->
     <section class="location-section" id="location">
         <div class="container">
-            <h2>Find Us</h2>
+            <h2>موقعنا</h2>
             <p>
-                We are located at Al-Fayha district, Bakhashab Street, Jeddah. Come by and enjoy a delicious meal!
+                نحن موجودون في حي الفيحاء، شارع باخشب، جدة. تفضلوا بزيارتنا واستمتعوا بوجبات لذيذة!
             </p>
             <div class="map-container">
                 <iframe
@@ -111,25 +145,22 @@
             </div>
         </div>
     </section>
-    
-    
-    
 
     <div class="section-divider"></div>
 
     <!-- Gallery Section -->
     <section class="gallery-section" id="gallery">
         <div class="container">
-            <h2>Our Gallery</h2>
+            <h2>معرض الصور</h2>
             <p>
-                Take a look at some of our mouth-watering dishes and the lively atmosphere at Shawarma Abu El-Ezz.
+                نظرة على أطباقنا الشهية والأجواء الحيوية في شاورما أبو العز
             </p>
             <div class="gallery-slider">
                 <div class="slides">
-                    <img src="assets/gallery1.jpg" alt="Gallery Image 1">
-                    <img src="assets/gallery2.jpg" alt="Gallery Image 2">
-                    <img src="assets/gallery3.jpg" alt="Gallery Image 3">
-                    <img src="assets/gallery4.jpg" alt="Gallery Image 4">
+                    <img src="assets/gallery1.jpg" alt="صورة من المعرض 1">
+                    <img src="assets/gallery2.jpg" alt="صورة من المعرض 2">
+                    <img src="assets/gallery3.jpg" alt="صورة من المعرض 3">
+                    <img src="assets/gallery4.jpg" alt="صورة من المعرض 4">
                 </div>
             </div>
         </div>
@@ -140,22 +171,22 @@
     <!-- Contact Us Section (Footer) -->
     <footer class="contact-us" id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
+            <h2>اتصل بنا</h2>
             <p>
-                Reach out to us through our social media or via WhatsApp for inquiries and reservations.
+                تواصل معنا عبر وسائل التواصل الاجتماعي أو من خلال واتساب للحصول على الاستفسارات والحجوزات.
             </p>
             <div class="social-icons">
-                <a href="https://wa.me/+966551958433" target="_blank" class="icon whatsapp" aria-label="WhatsApp">
+                <a href="https://wa.me/+966551958433" target="_blank" class="icon whatsapp" aria-label="واتساب">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="mailto:sh.abuelezz23@gmail.com" class="icon email" aria-label="Email">
+                <a href="mailto:sh.abuelezz23@gmail.com" class="icon email" aria-label="البريد الإلكتروني">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://instagram.com/shawrmaabuelezz" target="_blank" class="icon instagram" aria-label="Instagram">
+                <a href="https://instagram.com/shawrmaabuelezz" target="_blank" class="icon instagram" aria-label="انستغرام">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-            <p class="footer-note">© 2023 Shawarma Abu El-Ezz. All Rights Reserved.</p>
+            <p class="footer-note">© 2023 شاورما أبو العز. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 

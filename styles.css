@@ -17,12 +17,16 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Tajawal', sans-serif;
     background-color: var(--background-color);
     color: var(--primary-color);
     line-height: 1.6;
     overflow-x: hidden; /* Prevent horizontal overflow */
+    direction: rtl; /* Right-to-left text direction for Arabic */
+    unicode-bidi: embed; /* Ensure Arabic punctuation aligns correctly */
+    font-size: 18px; /* Adjust to a comfortable reading size */
 }
+
 
 /* Header Styling */
 .main-header {
@@ -159,7 +163,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 70vh; /* Full viewport height */
+    height: 70vh;
     width: 100%;
     overflow: hidden;
 }
@@ -171,7 +175,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(10px); /* Apply blur effect */
+    filter: blur(10px);
 }
 
 .hero-overlay {
@@ -183,25 +187,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(15, 41, 58, 0.5); /* Slight dark overlay */
+    background-color: rgba(15, 41, 58, 0.5);
     z-index: 1;
 }
 
-.hero-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--primary-color, #fff); /* White color by default */
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
+/* Logo Style */
+.hero-logo {
+    width: 250px;
+    height: auto;
+    max-width: 80%;
+    transform: translateY(40%); /* Move the logo further down */
 }
 
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    .hero-logo {
+        width: 180px;
+        transform: translateY(30%); /* Adjust position for mobile */
     }
 }
+
+
 
 /* Who We Are Section */
 .who-we-are {
@@ -350,6 +355,139 @@ body {
         padding: 0.8rem 1.5rem;
     }
 }
+/* Order Section */
+.order-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(15, 41, 58, 0.9); /* Matching theme background */
+    color: #fff;
+}
+
+.order-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color, #fff); /* Theme primary color */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.order-section p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    margin-bottom: 25px;
+}
+
+/* Order Button */
+.order-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.order-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: var(--background-color);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.order-button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .order-section h2 {
+        font-size: 2rem;
+    }
+
+    .order-section p {
+        font-size: 1rem;
+    }
+
+    .order-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+/* Call Section */
+.call-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(15, 41, 58, 0.9); /* Matching theme background */
+    color: #fff;
+}
+
+.call-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color, #fff); /* Theme primary color */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.call-section p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    margin-bottom: 25px;
+}
+
+/* Call Button */
+.call-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.call-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: var(--background-color);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.call-button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .call-section h2 {
+        font-size: 2rem;
+    }
+
+    .call-section p {
+        font-size: 1rem;
+    }
+
+    .call-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
 
 /* Opening Hours Section */
 .opening-hours {
@@ -483,11 +621,26 @@ body {
     }
 }
 /* Gallery Section */
+
+/* Reset direction for Gallery Section */
+.gallery-section {
+    direction: ltr; /* Switch back to left-to-right */
+    unicode-bidi: isolate; /* Prevent RTL influence */
+    text-align: center;
+    
+}
+
+.gallery-section h2, .gallery-section p {
+    text-align: left; /* Optional: Keep text left-aligned */
+    direction: ltr; /* Ensure proper alignment */
+}
+
 .gallery-section {
     padding: 4rem 2rem;
     background-color: var(--background-color);
     color: var(--primary-color);
     text-align: center;
+    
 }
 
 .gallery-section .container {
@@ -501,6 +654,8 @@ body {
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center; /* Center-align the paragraph text */
+
 }
 
 .gallery-section p {
@@ -508,6 +663,8 @@ body {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 2rem;
+    text-align: center; /* Center-align the paragraph text */
+
 }
 
 /* Slider */
