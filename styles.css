@@ -751,6 +751,51 @@ body {
     color: var(--hover-color);
     transform: scale(1.1);
 }
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-icons .icon {
+    font-size: 2.5rem;
+    color: var(--primary-color, #fff); /* White color by default */
+    transition: color 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    color: var(--accent-color, #25D366); /* Change color on hover */
+}
+/* Snapchat Icon Yellow */
+.social-icons .snapchat {
+    color: #FFFC00; /* Snapchat yellow */
+}
+
+/* Hover Effects */
+.social-icons .icon:hover {
+    color: var(--accent-color, #25D366); /* Change color on hover */
+}
+
+.social-icons .snapchat:hover {
+    color: #FFD700; /* Darker yellow on hover */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-us h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-us p {
+        font-size: 1rem;
+    }
+
+    .social-icons .icon {
+        font-size: 2rem;
+    }
+}
+
 
 /* Icon Colors (Optional) */
 .icon.whatsapp {
